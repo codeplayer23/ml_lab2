@@ -35,3 +35,13 @@ april_mean = statistics.mean(april_prices)
 
 print("April prices mean :",april_mean)
 print("Difference :",mean_X-april_mean)
+
+## Calculating the probability of Loss 
+
+chg_values = df["Chg%"]
+df["Chg%"] = df["Chg%"].astype(str).str.rstrip('%').astype(float)
+total_stocks = len(df)
+loss_values = df[df["Chg%"]<0]
+
+prob_loss = len(loss_values)/total_stocks
+print("Probability of loss :",prob_loss) 
