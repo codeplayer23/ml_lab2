@@ -44,4 +44,9 @@ total_stocks = len(df)
 loss_values = df[df["Chg%"]<0]
 
 prob_loss = len(loss_values)/total_stocks
-print("Probability of loss :",prob_loss) 
+print("Probability of loss :",prob_loss)
+
+## Calculationg probability of making profit on wednesday 
+
+wed_chg = df['Chg%'].astype(str).str.rstrip('%').astype(float)
+print(wed_chg)
