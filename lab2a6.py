@@ -1,7 +1,7 @@
 import numpy as np  ## for matrices 
 import pandas as pd ## for importing xlxs  
 from sklearn.preprocessing import LabelEncoder ## for encoding values 
-from sklearn.metrics.pairwise import cosine_similarity ## for computing jacquard coefficient 
+from sklearn.metrics.pairwise import cosine_similarity ## for computing cosine similarity
 
 
 ## loading the required sheet 
